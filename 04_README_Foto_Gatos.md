@@ -273,3 +273,21 @@ También puedes especificar el idioma de tu página agregando el atributo lang a
 
 Añade un atributo lang con el valor en a la etiqueta de apertura del elemento html para especificar que el lenguaje de la página es el inglés.
 
+Paso 41
+Todas las páginas deben comenzar con <!DOCTYPE html>. Esta cadena especial se conoce como declaración y garantiza que el navegador intente cumplir con las especificaciones de la industria.
+
+<!DOCTYPE html> le dice a los navegadores que el documento es un documento HTML5 la cual es la última versión de HTML.
+
+Añade esta declaración como la primera línea del código.
+
+Paso 42
+Puedes establecer el comportamiento del navegador añadiendo elementos meta en el head. Aquí tienes un ejemplo:
+
+Código de ejemplo
+<meta attribute="value">
+Dentro del elemento head, anida un elemento meta con un atributo charset establecido al valor UTF-8. Esto indica al navegador cómo codificar los caracteres de la página.
+
+Ten en cuenta que el elemento meta es un elemento vacío.
+
+Con ese último cambio, has completado el taller de la aplicación de fotos de gatos. ¡Felicidades!
+
