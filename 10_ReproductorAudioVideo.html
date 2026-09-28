@@ -1,0 +1,42 @@
+<!--
+Construye un reproductor de audio y video HTML
+Construye una app que sea funcionalmente similar a este proyecto de ejemplo. Trata de no copiar el proyecto de ejemplo, dale tu propio estilo personal.
+
+Objetivo: Cumplir con las historias de usuario a continuación y pasar todas las pruebas para completar el laboratorio.
+
+Historias de usuario:
+
+Debería tener un elemento h1 para el título principal de la página.
+Debes tener dos elementos section.
+Dentro del primer elemento section, debes tener un elemento h2 para el título del video que se está reproduciendo.
+Debajo del elemento h2, debes tener un elemento video con los atributos controls y width. El atributo width debe estar configurado en 640.
+Dentro del elemento video, debería tener un elemento source con un atributo src que apunte a un archivo de video y un atributo type.
+Puedes usar https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4.
+Dentro del segundo elemento section, debes tener un elemento h2 para el título de la canción que está sonando.
+Debajo del elemento h2, debes tener un elemento audio con los atributos controls y loop, y un atributo src que apunte a un archivo de audio.
+Puedes usar https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3.
+O https://cdn.freecodecamp.org/curriculum/js-music-player/we-are-going-to-make-it.mp3.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Audio and Video Lab</title>
+</head>
+<body>
+  <h1>HTML Audio and Video Lab</h1>
+  <section>
+    <h2>What is the map method and how does it work?</h2>
+    <video src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4" controls width="640">
+    <source src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4" type="video/mp4"></source>
+    </video>
+  </section>
+  <section>
+    <h2>Sailing Away</h2>
+    <audio src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3" controls loop>
+    <source src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3" type="audio/mp3"></source>
+    </audio>
+  </section>
+</body>
+</html>

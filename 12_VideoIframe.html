@@ -1,0 +1,71 @@
+<!--
+Paso 1
+En este taller, usarás el elemento iframe para mostrar un video. La estructura básica de HTML ya ha sido preparada para ti.
+
+Comienza creando un elemento h1 con el texto iframe Video Display.
+
+Paso 2
+Ahora, crea un elemento iframe. No pongas nada dentro todavía.
+
+Paso 3
+En la primera lección sobre el elemento iframe, aprendiste que es un elemento reemplazado al igual que img. Eso significa que también puede tener los atributos width y height para determinar qué tan alto y ancho debe ser.
+
+Dale a tu elemento iframe un width de 560 y un height de 315.
+
+Paso 4
+El elemento iframe también toma un atributo src con un valor que indica la URL o la ruta del recurso a mostrar.
+
+Agrega un atributo src de https://www.youtube.com/embed/I0_951_MPE0 a tu elemento iframe.
+
+En este punto, deberías ver el video mostrando en la página, pero hay algunos atributos más que necesitas agregar.
+
+Paso 5
+Uno de los atributos es allow. Es como una lista de permisos que le dice al navegador qué funciones puede usar el iframe.
+
+Aquí tienes un elemento iframe con el atributo allow:
+
+Código de ejemplo
+<iframe
+  allow="accelerometer autoplay clipboard-write encrypted-media gyroscope picture-in-picture web-share"
+></iframe>
+Agrega el atributo allow con el valor accelerometer, autoplay y clipboard-write.
+
+accelerometer permite que el iframe use sensores de movimiento para detectar cosas como la inclinación y rotación del dispositivo. autoplay permite que el video comience a reproducirse automáticamente, y clipboard-write permite que el iframe escriba datos en el portapapeles del usuario.
+
+Paso 6
+Agrega encrypted-media, gyroscope y web-share a los valores existentes en el atributo allow.
+
+Estos tres permitirán usar extensiones de medios encriptados para proteger el video, otorgar acceso a los sensores de movimiento y orientación del dispositivo, y permitir compartir el contenido del iframe a través de los diálogos nativos de compartir del dispositivo.
+
+Paso 7
+El siguiente atributo que agregarás es referrerpolicy. Es la regla que determina cuánta información compartes cuando tu página se conecta a otra página.
+
+Agrega el atributo referrerpolicy y configúralo en strict-origin-when-cross-origin. Esto comparte la dirección completa en el mismo sitio, solo el nombre del sitio en otros sitios, y nada en sitios inseguros.
+
+Paso 8
+Por último, pero no menos importante, el atributo que agregarás es allowfullscreen. Como implica, permite que el video se vea en modo de pantalla completa.
+
+¡Con eso, el taller está completado!
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Videos in an iframe</title>
+  </head>
+  <body>
+    <h1>iframe Video Display</h1>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/I0_951_MPE0"
+      allow="accelerometer autoplay clipboard-write encrypted-media gyroscope web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    >
+
+    </iframe>
+  </body>
+</html>

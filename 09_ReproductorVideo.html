@@ -1,0 +1,121 @@
+<!--
+Paso 1
+En este taller, construirás un reproductor de video HTML. El boilerplate de HTML ha sido proporcionado para ti.
+
+Crea un elemento h1 y asígnale el texto Working with the HTML Video Element.
+
+Paso 2
+A continuación, crea un elemento video debajo del h1. En los siguientes pasos, agregarás los atributos necesarios para que el reproductor de video funcione.
+
+Paso 3
+En una lección anterior, aprendiste sobre los diferentes atributos disponibles para el elemento video. El atributo width determina el ancho del video en píxeles.
+
+Agrega el atributo width al elemento video con un valor de 640.
+
+Paso 4
+El atributo loop reiniciará el video una vez que termine la reproducción. Piensa en un meme de internet que repite la reproducción. Omitir el atributo loop hará que el video se reproduzca una sola vez.
+
+El atributo loop es un atributo booleano y no necesita un valor.
+
+Agrega el atributo loop al elemento video.
+
+Paso 5
+El atributo controls proporciona controles de reproducción que incluyen reproducir/pausar, retroceder y control de volumen para el elemento video.
+
+El atributo controls es un atributo booleano y no necesita un valor.
+
+Agrega el atributo controls al elemento video.
+
+Ahora deberías ver el elemento video mostrado en la página.
+
+Paso 6
+El atributo muted silenciará el audio en la reproducción inicial. Si tienes controls habilitados, el usuario podrá activar el audio. Omitir el atributo muted reproducirá el audio en la reproducción inicial.
+
+El atributo muted es un atributo booleano y no necesita un valor.
+
+Agrega el atributo muted al elemento video.
+
+Paso 7
+El atributo poster es una imagen en miniatura del video. Piensa en los videos que ves en YouTube. Se muestra mientras el video se está descargando. Si se omite el atributo, se muestra el primer fotograma del video durante la fase de descarga.
+
+Ahora, agrega el atributo poster con el valor https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg a tu elemento video.
+
+Paso 8
+Puede que hayas notado que no enlazaste al video real. Lo harás en la siguiente fase. Cuando se trata de tipos de archivos de video, hay diferencias en el soporte del navegador. Para adaptarte a esto, puedes usar elementos source dentro del elemento video y el navegador seleccionará el primer source compatible.
+
+Aquí tienes un ejemplo de un elemento source:
+
+Código de ejemplo
+<video controls width="250">
+  <source src="src-url-goes-here" type="video-type-goes-here" />
+</video>
+El elemento source es un elemento vacío, por lo que no tiene una etiqueta de cierre.
+
+Agrega un elemento source dentro de tu elemento video.
+
+Paso 9
+Para especificar el recurso multimedia del video, necesitarás agregar el atributo src al elemento source.
+
+Agrega el atributo src con el valor https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4.
+
+Paso 10
+Has usado un archivo de video con una extensión de archivo mp4, y necesitas indicarle al navegador eso para que sepa cómo leer el archivo.
+
+Usarás el atributo type para especificar el tipo MIME video/mp4.
+
+MIME (Multipurpose Internet Mail Extensions) es un estándar para describir documentos en otras formas además de texto ASCII, por ejemplo, audio, video e imágenes.
+
+MP4, formalmente conocido como MPEG-4 Part 14, es un formato contenedor de multimedia digital. Se usa ampliamente para almacenar video y audio, pero también puede incluir otros tipos de datos como subtítulos e imágenes fijas. Los archivos MP4 están diseñados para la transmisión por Internet y son compatibles con muchos dispositivos y plataformas.
+
+Ahora, agrega el atributo type y el valor video/mp4.
+
+Paso 11
+Otro tipo MIME común es el tipo MIME video/webm.
+
+WebM es un formato de archivo multimedia audiovisual de código abierto desarrollado por Google, diseñado principalmente para contenido multimedia basado en la web. Soporta códecs de video como VP8, VP9 y AV1, y códecs de audio como Vorbis y Opus, lo que lo convierte en una opción popular para los elementos de video y audio de HTML5.
+
+Debajo de tu primer elemento source, agrega otro elemento source y asígnale un atributo src con el valor https://cdn.freecodecamp.org/curriculum/labs/mapmethod.webm y un atributo type con el valor video/webm.
+
+Paso 12
+Otro tipo MIME común es el tipo MIME video/ogg.
+
+Ogg es un formato contenedor de multimedia digital diseñado para proporcionar una transmisión eficiente y manipulación de multimedia digital. Es mantenido por la Fundación Xiph.Org y es libre y abierto, sin restricciones por patentes de software. Su nombre se deriva de "ogging", jerga del juego de computadora Netrek.
+
+Debajo de tu segundo elemento source, agrega un tercer elemento source y asígnale un atributo src con el valor https://cdn.freecodecamp.org/curriculum/labs/mapmethod.ogg y un atributo type con el valor video/ogg.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Working with the HTML Video Element</title>
+</head>
+<body>
+  <h1>Working with the HTML Video Element</h1>
+  <video
+    width="640"
+    loop
+    controls
+    muted
+    poster="https://cdn.freecodecamp.org/curriculum/labs/past-event2.jpg"
+  >
+    <source
+      src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4"
+      type="video/mp4"
+    >
+    <source
+      src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.webm"
+      type="video/webm"
+    >
+    <source
+      src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.ogg"
+      type="video/ogg"
+    >
+    <source
+      src="https://cdn.freecodecamp.org/curriculum/labs/mapmethod.mov"
+      type="video/quicktime"
+    >    
+  </video>
+</body>
+</html>

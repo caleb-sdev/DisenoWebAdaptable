@@ -1,0 +1,75 @@
+<!--
+Paso 1
+En este taller, construirás un reproductor de música en HTML. La estructura básica de HTML ha sido proporcionada para ti.
+
+Crea un elemento h1 y asígnale el texto freeCodeCamp Tunes.
+
+Paso 2
+Debajo del h1, agrega un elemento h2 con el texto Can't Stay Down. Este es el título de la primera canción.
+
+Debajo del elemento h2 agrega un elemento p con el texto Artist: Quincy Larson.
+
+Paso 3
+A continuación, crea un elemento audio debajo del elemento p. En los próximos pasos, agregarás los atributos necesarios para que el elemento audio reproduzca música.
+
+Paso 4
+Para especificar el recurso multimedia para el audio, necesitarás agregar el atributo src al elemento audio.
+
+Agrega el atributo src con el valor https://cdn.freecodecamp.org/curriculum/js-music-player/can't-stay-down.mp3.
+
+Paso 5
+El atributo loop reiniciará el audio una vez que la reproducción haya terminado. Piensa en un meme de internet que repite la reproducción. Omitir el atributo loop hará que el audio se reproduzca una vez.
+
+El atributo loop es un atributo booleano y no necesita un valor.
+
+Agrega el atributo loop al elemento audio.
+
+Paso 6
+El atributo controls proporciona controles de reproducción que incluyen pausar/reanudar la reproducción, búsqueda y control de volumen para el elemento audio.
+
+El atributo controls es un atributo booleano y no necesita un valor.
+
+Agrega el atributo controls al elemento audio.
+
+Ahora deberías ver el elemento audio mostrado en la página.
+
+Paso 7
+Agrega un nuevo elemento h2 debajo del elemento audio con el texto Cruising for a Musing.
+
+Debajo del h2, agrega un elemento p con el texto Artist: Quincy Larson.
+
+Paso 8
+Debajo del elemento p, agrega un elemento audio, asígnale un atributo src con un valor de https://cdn.freecodecamp.org/curriculum/js-music-player/cruising-for-a-musing.mp3, y los atributos loop y controls.
+
+Paso 9
+La última canción se titula Scratching the Surface, el artista es Quincy Larson, y el archivo a usar es https://cdn.freecodecamp.org/curriculum/js-music-player/scratching-the-surface.mp3.
+
+Agrega la última canción para completar el reproductor de música siguiendo el mismo patrón que usaste para las dos primeras canciones.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Working with the HTML Audio Element</title>
+</head>
+<body>
+  <h1>freeCodeCamp Tunes</h1>
+
+  <h2>Can't Stay Down</h2>
+  <p>Artist: Quincy Larson</p>
+  
+  <audio src="https://cdn.freecodecamp.org/curriculum/js-music-player/can't-stay-down.mp3" loop controls></audio>
+
+  <h2>Cruising for a Musing</h2>
+  <p>Artist: Quincy Larson</p>
+
+  <audio src="https://cdn.freecodecamp.org/curriculum/js-music-player/cruising-for-a-musing.mp3" loop controls></audio>
+
+  <h2>Scratching the Surface</h2>
+  <p>Artist: Quincy Larson</p>
+  <audio src="https://cdn.freecodecamp.org/curriculum/js-music-player/scratching-the-surface.mp3" loop controls></audio>
+
+</body>
+</html>
