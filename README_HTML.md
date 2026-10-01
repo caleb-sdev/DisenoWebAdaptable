@@ -1,0 +1,258 @@
+Revisión básica de HTML
+Conceptos Básicos de HTML
+Rol de HTML: HTML representa el contenido y la estructura de la página web.
+Elementos HTML: Los elementos son los bloques de construcción de un documento HTML. Representan títulos, párrafos, enlaces, imágenes y más. La mayoría de los elementos HTML consisten en una etiqueta de apertura (<elementName>) y una etiqueta de cierre (</elementName>).
+Esta es la sintáxis básica:
+
+<elementName>Content goes here</elementName>
+Elementos Vacíos: Los elementos vacíos no pueden tener contenido y solo tienen una etiqueta de inicio. Los ejemplos incluyen elementos img y meta.
+<img>
+<meta>
+Es común ver bases de código que incluyen una barra inclinada / dentro del elemento vacío. Ambos son aceptables:
+
+<img>
+<img/>
+Atributos: Un atributo es un valor ubicado dentro de la etiqueta de apertura de un elemento HTML. Los atributos proporcionan información adicional sobre el elemento o especifican cómo debe comportarse el elemento. Aquí está la sintaxis básica de un atributo:
+<element attribute="value"></element>
+Un atributo booleano es un atributo que puede estar presente o ausente en una etiqueta HTML. Si está presente, el valor es true, de lo contrario es false. Ejemplos de atributos booleanos incluyen disabled, readonly y required.
+
+Comentarios: Los comentarios se utilizan en la programación para dejar notas para sí mismos y otros desarrolladores en su código. Aquí está la sintaxis para un comentario en HTML:
+<!--This is an HTML comment.-->
+Elementos comunes de HTML
+Elementos de Encabezado: Hay seis elementos de encabezado en HTML. Los elementos de encabezado h1 a h6 se utilizan para indicar la importancia del contenido por debajo de ellos. Entre menor sea el número, el contenido será más importante, por lo tanto, el elemento h2 es menos importante que el elemento h1.
+<h1>most important heading element</h1>
+<h2>second most important heading element</h2>
+<h3>third most important heading element</h3>
+<h4>fourth most important heading element</h4>
+<h5>fifth most important heading element</h5>
+<h6>least important heading element</h6>
+Elementos de Párrafo: Se utiliza para párrafos en una página web.
+<p>This is a paragraph element.</p>
+Elementos img: El elemento img se utiliza para agregar imágenes a la página web. El atributo src se utiliza para especificar la ubicación de esa imagen. Para los elementos de imagen, es una buena práctica incluir otro atributo llamado el atributo alt. Aquí hay un ejemplo de un elemento img con los atributos src y alt:
+<img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+Elemento body: Este elemento se utiliza para representar el contenido del documento HTML.
+<body>
+  <h1>CatPhotoApp</h1>
+  <p>This is a paragraph element.</p>
+</body>
+Elementos section: Este elemento se utiliza para dividir el contenido en secciones más pequeñas.
+<section>
+  <h2>About Me</h2>
+  <p>Hi, I am Jane Doe and I am a web developer.</p>
+</section>
+Elementos div: Este elemento es un elemento HTML genérico que no tiene significado semántico. Se utiliza como un contenedor genérico para contener otros elementos HTML.
+<div>
+  <h1>I am a heading</h1>
+  <p>I am a paragraph</p>
+</div>
+Elementos de Anclaje (a): Estos elementos se utilizan para aplicar enlaces a una página web. El atributo href se utiliza para especificar a dónde debe ir el enlace cuando el usuario hace clic en él.
+<a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute cats</a>
+Elementos de Lista Desordenada (ul) y Ordenada (ol): Para crear una lista con viñetas de elementos, debe usar el elemento ul con uno o más elementos li anidados en su interior como este:
+<ul>
+  <li>catnip</li>
+  <li>laser pointers</li>
+  <li>lasagna</li>
+</ul>
+Para crear una lista ordenada de elementos, debe usar el elemento ol:
+
+<ol>
+  <li>flea treatment</li>
+  <li>thunder</li>
+  <li>other cats</li>
+</ol>
+Elemento de Énfasis (em): Se utiliza para poner énfasis en un pedazo de texto.
+<p>Cats <em>love</em> lasagna.</p>
+Elemento de Fuerte Importancia (strong): Este elemento se utiliza para poner énfasis fuerte en el texto para indicar un sentido de urgencia y seriedad.
+<p>
+  <strong>Important:</strong> Before proceeding, make sure to wear your safety goggles.
+</p>
+Elementos figure y figcaption: El elemento figure se utiliza para agrupar contenido como imágenes y diagramas. El elemento figcaption se utiliza para representar una leyenda para ese contenido dentro del elemento figure.
+<figure>
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Two tabby kittens sleeping together on a couch.">
+  <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+</figure>
+Elemento main: Este elemento se utiliza para representar el contenido principal de una página web.
+Elemento footer: Este elemento se coloca en la parte inferior del documento HTML y generalmente contiene información de derechos de autor y otros enlaces importantes de la página.
+<footer>
+  <p>
+    No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+  </p>
+</footer>
+Elemento button: Este elemento se usa para crear un botón clicable.
+<button>Click me</button>
+Identificadores y Agrupación
+IDs: Identificadores únicos de elementos para elementos HTML. Los nombres de ID solo deben usarse una vez por documento HTML.
+<h1 id="title">Movie Review Page</h1>
+Los nombres de ID no pueden tener espacios. Si tu nombre de ID contiene varias palabras, puedes usar guiones o guiones bajos entre las palabras así:
+
+<div id="red-box"></div>
+Clases: Las clases se utilizan para agrupar elementos para estilo y comportamiento.
+<div class="box"></div>
+A diferencia de los IDs, puede reutilizar el mismo nombre de clase a lo largo del documento HTML. El valor para class también puede tener espacios como este:
+
+<div class="box red-box"></div>
+<div class="box blue-box"></div>
+Caracteres Especiales y Enlaces
+Entidades HTML: Una entidad HTML, o referencia de carácter, es un conjunto de caracteres usados para representar un carácter reservado en HTML. Los ejemplos incluyen el símbolo ampersand (&amp;) y el símbolo menor que (&lt;).
+<p>This is an &lt;img /&gt; element</p>
+Elemento link: Este elemento se utiliza para enlazar a recursos externos como hojas de estilo e iconos del sitio. Aquí está la sintaxis básica para usar el elemento link para un archivo CSS externo:
+<link rel="stylesheet" href="./styles.css" />
+El atributo rel se usa para especificar la relación entre el recurso enlazado y el documento HTML. El atributo href se usa para especificar la ubicación del URL para el recurso externo.
+
+Elemento script: Este elemento se utiliza para incrustar código ejecutable.
+<body>
+  <script>
+    alert("Welcome to freeCodeCamp");
+  </script>
+</body>
+Aunque técnicamente puedes escribir todo tu código JavaScript dentro de las etiquetas script, se considera una mejor práctica enlazar a un archivo JavaScript externo. Aquí hay un ejemplo de cómo usar el elemento script para enlazar a un archivo JavaScript externo:
+
+<script src="path-to-javascript-file.js"></script>
+El atributo src se usa aquí para especificar la ubicación de ese archivo JavaScript externo.
+
+Plantilla y Codificación
+Plantilla de HTML: Esta es una plantilla que incluye la estructura básica y los elementos esenciales que todo documento HTML necesita.
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>freeCodeCamp</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!--Headings, paragraphs, images, etc. go inside here-->
+  </body>
+</html>
+DOCTYPE: Esto se usa para indicar a los navegadores qué versión de HTML estás usando.
+Elemento html: Representa el elemento de nivel superior o la raíz de un documento HTML. Para especificar el idioma del documento, debes usar el atributo lang.
+Elemento head: La sección head contiene metadatos importantes que son información detrás de escena necesaria para navegadores y motores de búsqueda.
+Elementos meta: Estos elementos representan los metadatos de tu sitio. Contienen detalles sobre cosas como la codificación de caracteres y cómo sitios como Twitter deben previsualizar el enlace de tu página, entre otros.
+Elemento title: Este elemento se usa para establecer el texto que aparece en la pestaña o ventana del navegador.
+Codificación de caracteres UTF-8: UTF-8, o UCS Transformation Format 8, es una codificación de caracteres estandarizada y ampliamente usada en la web. La codificación de caracteres es el método que usan las computadoras para almacenar caracteres como datos. El atributo charset se usa dentro de un elemento meta para establecer la codificación de caracteres a UTF-8.
+SEO y Compartición Social
+SEO: La optimización para motores de búsqueda es una práctica que optimiza las páginas web para que sean más visibles y tengan mejor posicionamiento en los motores de búsqueda.
+Elemento Meta (description): Se usa para proporcionar una descripción corta de la página web y mejorar el SEO.
+<meta
+  name="description"
+  content="Discover expert tips and techniques for gardening in small spaces, choosing the right plants, and maintaining a thriving garden."
+/>
+Etiquetas Open Graph: El protocolo open graph te permite controlar cómo aparece el contenido de tu sitio web en varias plataformas de redes sociales, como Facebook, LinkedIn y muchas más. Al establecer estas propiedades open graph, puedes atraer a los usuarios para que quieran hacer clic e interactuar con tu contenido. Puedes establecer estas propiedades mediante una colección de elementos meta dentro de la sección head de tu HTML.
+Propiedad og:title: Se usa para establecer el título que se muestra en las publicaciones de redes sociales.
+<meta content="freeCodeCamp.org" property="og:title" />
+Propiedad og:type: La propiedad type se utiliza para representar el tipo de contenido que se comparte en redes sociales. Ejemplos de este contenido incluyen artículos, sitios web, videos o música.
+<meta property="og:type" content="website" />
+Propiedad og:image: Se utiliza para establecer la imagen que se muestra para las publicaciones en redes sociales.
+<meta
+  content="https://cdn.freecodecamp.org/platform/universal/fcc_meta_1920X1080-indigo.png"
+  property="og:image"
+/>
+Propiedad og:url: Se utiliza para establecer la URL a la que los usuarios harán clic para las publicaciones en redes sociales.
+<meta property="og:url" content="https://www.freecodecamp.org" />
+Elementos Multimedios y Optimización
+Elementos reemplazados: Un elemento reemplazado es un elemento cuyo contenido está determinado por un recurso externo en lugar de por el propio CSS. Un ejemplo sería un elemento iframe. iframe significa marco en línea. Es un elemento en línea usado para incrustar otro contenido HTML directamente dentro de la página HTML.
+<iframe src="https://www.example.com" title="Example Site"></iframe>
+Puede incluir el atributo allowfullscreen que permite al usuario mostrar el iframe en modo de pantalla completa.
+
+<iframe
+  src="video-url"
+  width="width-value"
+  height="height-value"
+  allowfullscreen
+></iframe>
+Para incrustar un video dentro de un iframe puede copiarlo directamente desde servicios de video populares como YouTube y Vimeo, o definirlo usted mismo con el atributo src apuntando a la URL de ese video. Aquí hay un ejemplo de incrustado de un curso popular de freeCodeCamp desde YouTube:
+
+<h1>A freeCodeCamp YouTube Video Embedded with the iframe Element</h1>
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/PkZNo7MFNFg?si=-UBVIUNM3csdeiWF"
+  title="YouTube video player"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+></iframe>
+Hay otros elementos reemplazados, como video y embed. Y algunos elementos se comportan como elementos reemplazados bajo circunstancias específicas. Aquí tienes un ejemplo de un elemento input con el atributo type establecido en image:
+
+<input type="image" alt="Descriptive text goes here" src="example-img-url">
+Optimización de medios: Hay tres herramientas a considerar al usar medios, como imágenes, en tus páginas web: el tamaño, el formato y la compresión. Un algoritmo de compresión se usa para reducir el tamaño de archivos o datos.
+Formatos de imagen: Dos de los formatos de archivo más comunes son PNG y JPG, pero ya no son los formatos más ideales para servir imágenes. A menos que necesites soporte para navegadores antiguos, deberías considerar usar un formato más optimizado, como WEBP o AVIF.
+Licencias de imágenes: Una imagen en dominio público no tiene derechos de autor y es libre para usarse sin restricciones. Las imágenes licenciadas específicamente bajo la licencia Creative Commons 0 se consideran dominio público. Algunas imágenes pueden estar bajo una licencia permisiva, como una licencia Creative Commons o la licencia BSD que usa freeCodeCamp.
+SVGs: Los gráficos vectoriales escalables (SVG) rastrean datos basados en rutas y ecuaciones para trazar puntos, líneas y curvas. Esto significa que un gráfico vectorial, como un SVG, puede escalarse a cualquier tamaño sin afectar la calidad.
+Integración Multimedia
+Elementos audio y video: Los elementos audio y video permiten añadir contenido de sonido y video a sus documentos HTML. El elemento audio soporta formatos de audio populares como mp3, wav y ogg. El elemento video soporta formatos mp4, ogg y webm.
+<audio src="CrystalizeThatInnerChild.mp3"></audio>
+Si deseas ver el reproductor de audio en la página, puedes agregar el elemento audio con el atributo controls:
+
+<audio src="CrystalizeThatInnerChild.mp3" controls></audio>
+El atributo controls permite a los usuarios gestionar la reproducción de audio, incluyendo ajustar el volumen, pausar, o reanudar la reproducción. El atributo controls es un atributo booleano que puede añadirse a un elemento para habilitar controles de reproducción integrados. Si se omite, no se mostrarán controles.
+
+Atributo autoplay: El atributo autoplay es un atributo booleano que hace que el audio o video empiece a reproducirse automáticamente tan pronto como pueda hacerlo sin detenerse.
+Atributo loop: El atributo loop es un atributo booleano que hace que el audio se reproduzca continuamente.
+<audio
+  src="https://cdn.freecodecamp.org/curriculum/js-music-player/can't-stay-down.mp3"
+  loop
+  controls
+></audio>
+Atributo muted: Cuando está presente en el elemento audio, el atributo booleano muted iniciará el audio en estado silenciado.
+<audio
+  src="https://cdn.freecodecamp.org/curriculum/js-music-player/can't-stay-down.mp3"
+  loop
+  controls
+  muted
+></audio>
+Elemento source: Cuando se trata de tipos de archivos de audio, existen diferencias en qué navegadores soportan qué tipo. Para acomodar esto, puedes usar elementos source dentro del elemento audio, y el navegador seleccionará la primera fuente que comprenda. Aquí tienes un ejemplo de uso de múltiples elementos source para un elemento audio:
+<audio controls>
+  <source src="audio.ogg" type="audio/ogg" />
+  <source src="audio.wav" type="audio/wav" />
+  <source src="audio.mp3" type="audio/mpeg" />
+</audio>
+Todos los atributos que hemos aprendido hasta ahora también son compatibles en el elemento video. Aquí tienes un ejemplo de uso de un elemento video con los atributos loop, controls y muted:
+
+<video
+  src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+  loop
+  controls
+  muted
+></video>
+Atributo poster: Si desea mostrar una imagen mientras el video se está descargando, puede usar el atributo poster. Este atributo no está disponible para elementos audio y es único para el elemento video.
+<video
+  src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4"
+  loop
+  controls
+  muted
+  poster="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg?x11217"
+  width="620"
+></video>
+Tipos de atributo target
+Atributo target: Este atributo indica al navegador dónde abrir la URL para el elemento ancla. Hay cuatro valores importantes posibles para este atributo: _self, _blank, _parent y _top. Hay un quinto valor, llamado _unfencedTop, que actualmente se usa para la API experimental FencedFrame. Probablemente aún no tengas razón para usar este.
+Valor _self: Este es el valor predeterminado para el atributo target. Abre el enlace en el contexto de navegación actual. En la mayoría de los casos, será la pestaña o ventana actual.
+<a href="https://freecodecamp.org" target="_self">Visit freeCodeCamp</a>
+Valor _blank: Este abre el enlace en un nuevo contexto de navegación. Normalmente, esto se abre en una nueva pestaña. Pero algunos usuarios pueden configurar sus navegadores para abrir en una nueva ventana en su lugar.
+<a href="https://freecodecamp.org" target="_blank">Visit freeCodeCamp</a>
+Valor _parent: Este abre el enlace en el padre del contexto actual. Por ejemplo, si su sitio web tiene un iframe, un valor _parent en ese iframe se abriría en la pestaña/ventana de su sitio web, no en el marco incrustado.
+<a href="https://freecodecamp.org" target="_parent">Visit freeCodeCamp</a>
+Valor _top: Abre el enlace en el contexto de navegación más alto, piensa en "el padre del padre". Es similar a _parent, pero el enlace siempre se abrirá en la pestaña o ventana completa del navegador, incluso para marcos anidados incrustados.
+<a href="https://freecodecamp.org" target="_top">Visit freeCodeCamp</a>
+Rutas Absolutas vs. Relativas
+Definición de ruta: Una ruta es una cadena que especifica la ubicación de un archivo o directorio en un sistema de archivos. En el desarrollo web, los caminos permiten a los desarrolladores enlazar a recursos como imágenes, hojas de estilo, scripts y otras páginas web.
+Sintaxis de Ruta: Hay tres sintaxis clave que conocer. Primero es la barra, que puede ser una barra invertida (\) o una barra diagonal (/) dependiendo de tu sistema operativo. La segunda es el punto único (.). Y finalmente, tenemos el doble punto (..). La barra es conocida como el "separador de rutas". Se utiliza para indicar una separación en el texto entre nombres de carpetas o archivos. Un solo punto señala el directorio actual, y dos puntos señalan el directorio padre.
+public/index.html
+./favicon.ico
+../src/index.css
+Ruta absoluta: Una ruta absoluta es una ruta completa a un recurso dentro de un sistema de archivos. Comienza desde el directorio raíz, incluye todos los demás directorios y finalmente el nombre y la extensión del archivo. El "directorio raíz" se refiere al directorio o carpeta de nivel superior en una jerarquía.
+URL absoluta: Una URL absoluta se basa en la ruta absoluta para recursos en la web. Además de la ruta, incluye el protocolo, que puede ser http, https o file, y el nombre de dominio. Aquí tienes un ejemplo de una URL absoluta que enlaza al logo de freeCodeCamp:
+<a href="https://design-style-guide.freecodecamp.org/img/fcc_secondary_small.svg">
+  View fCC Logo
+</a>
+Ruta Relativa: Una ruta relativa especifica la ubicación de un archivo en relación con el directorio del archivo actual. No incluye el protocolo ni el nombre de dominio, haciéndolo más corto y más flexible para enlaces internos dentro del mismo sitio web. Aquí tienes un ejemplo de cómo enlazar a la página about.html desde la página contact.html, ambas en la misma carpeta:
+<p>
+  Read more on the
+  <a href="about.html">About Page</a>
+</p>
+Estados de enlace
+:link: Este es el estado predeterminado. Representa un enlace que el usuario no ha visitado, clicado o con el que no ha interactuado aún. Puedes pensar en este estado como el que proporciona los estilos base para todos los enlaces en tu página. Los otros estados se construyen sobre este.
+:visited: Se aplica cuando un usuario ya ha visitado la página enlazada. Por defecto, esto cambia el enlace a color púrpura, pero puedes aprovechar CSS para dar una indicación visual diferente al usuario.
+:hover: Este estado se aplica cuando un usuario pasa el cursor sobre un enlace. Es útil para llamar la atención extra sobre un enlace, para asegurar que el usuario realmente quiere hacer clic.
+:focus: Este estado se aplica cuando enfocamos un enlace.
+:active: Este estado se aplica a enlaces que están siendo activados por el usuario. Esto normalmente significa hacer clic en el enlace con el botón principal del ratón, generalmente el clic izquierdo.
